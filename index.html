@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+<div class="box">Пример,мир
+    <a>
+        Меня зовут Ангелина
+    <h2> 
+        <b>
+            Мне <i>24 года</i>
+        </b>
+    </h2>
+    <ul style="list-style-type:square;">
+        <li>1</li>
+        <li>2</li>
+    </ul> <hr/>
+</div>
+<div class="box-1">
+    <mark>  my book</mark> <br/>
+    Его зовут Тоша <br/>
+
+    <a href="tel:+7999999999">+7999999999   
+    </a>
+
+    <button type="submit">войти</button><br/>
+</div>
+<div class="box-2">
+    <img src="./images/cat.jpg" alt="котик"
+    width="250" height="250"> <br/>
+
+    Как сказал кот: <q cite="...">МЯУ</q> <br/> 
+</div>
+<table class="box-3">
+    <caption>Потребность кота</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Наименование</th>
+                <th rowspan="2">Регулярность</th>
+                <th colspan="2">Количество в месяц</th>
+                <th rowspan="2">Сумма</th>
+            </tr>
+            <tr> 
+                <th>Килограмм</th>
+                <th>Штук</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Сухой корм</td>
+                <td>2 раза в день</td>
+                <td>2</td>
+                <td></td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Влажный корм</td>
+                <td>1 раз в день</td>
+                <td></td>
+                <td>12</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Наполнитель</td>
+                <td>2 раза в месяц</td>
+                <td>5</td>
+                <td></td>
+                <td>1500</td> 
+            </tr>
+        </tbody>
+         <tfoot>
+            <tr>
+                <td>Итого</td>
+                <td colspan="4">4500</td>
+            </tr>
+        </tfoot>
+</table>
+
+<form id="myforms">
+        <!-- "" -->
+    <fieldset>
+    <legend>Ваши данные</legend>
+    <p>
+        <label for="user-name">Ваше имя:</label>
+        <input 
+         id="user-name" 
+         name="user-name"
+         type="text" 
+         inputmode="text"
+         placeholder="Ваше имя">
+    </p>
+    <p>
+        <label for="user-phone">Ваш телефон:</label>
+        <input 
+         id="user-phone" 
+         name="user-phone" 
+         type="tel" 
+         required inputmode="tel" 
+         placeholder="+7(999)999-99-99" > 
+    </p>
+    <p>
+        <label for="email">Ваша почта:</label>
+        <input 
+         id="email" 
+         name="user-email" 
+         type="email" 
+         inputmode="email"
+         placeholder="example@email.com">
+    </p>
+    <p>
+        <label for="fulldate">Ваша дата рождения:</label>
+        <input 
+         type="date" 
+         id="fulldate" 
+         name="fulldate">
+    </p>
+    <p>
+        <label for="city">Ваш город</label>
+        <select 
+          name="user-city" 
+          id="city" 
+          type="city"  
+          required>
+            <option disabled value="" selected>Не выбрано</option>
+            <option value="dmd">Домодедово</option>
+            <option value="zhuk">Жуковский</option>
+            <option value="rama">Раменское</option>
+        </select>
+    </p>
+    <p>
+        <input 
+         type="radio"
+         id="male" 
+         name="gender" 
+         value="male" 
+         checked>
+        <label for="male">Мужчина</label>
+        
+        <input 
+         type="radio"
+         id="female" 
+         name="gender" 
+         value="female">
+        <label for="female">Женщина</label>
+    </p>
+    <p>
+        <input 
+        type="checkbox"
+        id="agreement-total"
+        name="agreement-total"
+        value="agreement-total"
+        checked>
+        <label for="agreement-total">
+            Я согласен с обработкой персональных данных
+        </label>
+    </p>
+    <p>
+        <button type="submit">
+            Отправить
+        </button>
+    </p>
+    </fieldset>
+</form>
+
+<dl>
+    <dt>Кофе</dt>
+    <dd>- черный горячий напиток</dd>
+    <dt>Молоко</dt>
+    <dd>- белый холодный напиток</dd>
+</dl>
+</body>
+</html>
